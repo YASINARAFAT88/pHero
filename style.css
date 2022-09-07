@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    color: aliceblue;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.banner-left {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.banner-right {
+    flex: 1;
+}
+
+.title {
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.title::before {
+    content: 'Programming Hero';
+    position: absolute;
+}
