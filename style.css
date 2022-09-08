@@ -37,6 +37,52 @@ body {
     border-radius: 50%;
 }
 
+.love-btn {
+    font-size: 19px;
+    background-color: #22bedd;
+    outline: none;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    border: 4px dashed #22bedd;
+    border-radius: 20px;
+    transition: 1s;
+    animation: lvBtn 4s ease infinite;
+}
+
+@keyframes lvBtn {
+    0% {
+        transform-origin: left right;
+        transform: scale(0.3);
+    }
+
+    25% {
+        transform-origin: left right;
+        transform: scale(0.4 20px);
+    }
+
+    50% {
+        transform-origin: left right;
+        transform: scale(0.4 20px);
+    }
+
+    75% {
+        transform-origin: left right;
+        transform: scale(0.4 20px);
+    }
+
+    0% {
+        transform-origin: left right;
+        transform: scale(0.3);
+    }
+}
+
+.love-btn:hover {
+    background-color: transparent;
+    border: 4px dashed #22bedd;
+}
+
 @keyframes zoom {
     0% {
         transform: scale(0.9);
@@ -195,4 +241,71 @@ body {
     100% {
         content: '|';
     }
+}
+
+.photo {
+    width: 280px;
+    height: 280px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.border {
+    background-color: white;
+    position: absolute;
+    transition: .7s linear;
+}
+
+.border.top,
+.border.bottom {
+    width: 270px;
+    height: 4px;
+}
+
+.border.left,
+.border.right {
+    width: 4px;
+    height: 270px;
+}
+
+.border.top {
+    top: 5px;
+    right: 100%;
+}
+
+.border.bottom {
+    bottom: 5px;
+    left: 100%;
+}
+
+.border.left {
+    left: 5px;
+    top: 100%;
+}
+
+.border.right {
+    right: 5px;
+    bottom: 100%;
+}
+
+.photo:hover .border.top {
+    right: 5px;
+}
+
+.photo:hover .border.bottom {
+    left: 5px;
+}
+
+.photo:hover .border.left {
+    top: 5px;
+}
+
+.photo:hover .border.right {
+    bottom: 5px;
 }
